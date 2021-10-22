@@ -10,13 +10,32 @@ local uitab = win:Tab("UI Setting")
 --home
 hometab:Button("Copy Discord", function()
         setclipboard("https://discord.gg/SFnBS6ag43")
+        
+                local NewSound = Instance.new("Sound")
+        NewSound.Parent = game.Players.LocalPlayer.Character
+        NewSound.SoundId = "rbxassetid://7147454322"
+        NewSound.Volume = 0.1
+
+        NewSound:Play()
+        NewSound.Ended:Wait()
+        NewSound:Destroy()
 end)
 
 hometab:Label("Exploit: ".. exploit)
 hometab:Label("Thx For using Moon Hub")
 --main
 maintab:Toggle("Gold Farm",false, function(r)
- if r == true then
+
+                local NewSound = Instance.new("Sound")
+        NewSound.Parent = game.Players.LocalPlayer.Character
+        NewSound.SoundId = "rbxassetid://7147454322"
+        NewSound.Volume = 0.1
+
+        NewSound:Play()
+        NewSound.Ended:Wait()
+        NewSound:Destroy()
+
+if r == true then
                 getgenv().farmer = true
                 while wait() do
                     if getgenv().farmer == true then
@@ -57,7 +76,17 @@ end)
 
 
 maintab:Toggle("Auto Claim Gold",false, function(r)
-            if r == true then
+
+                local NewSound = Instance.new("Sound")
+        NewSound.Parent = game.Players.LocalPlayer.Character
+        NewSound.SoundId = "rbxassetid://7147454322"
+        NewSound.Volume = 0.1
+
+        NewSound:Play()
+        NewSound.Ended:Wait()
+        NewSound:Destroy()
+
+if r == true then
                 getgenv().farmer = true
                 while wait() do
                     if getgenv().farmer == true then
@@ -76,5 +105,7 @@ maintab:Toggle("Auto Claim Gold",false, function(r)
         end)
         --ui
         uitab:Colorpicker("Change UI Color",Color3.fromRGB(44, 120, 224), function(t)
+
+        
 lib:ChangePresetColor(Color3.fromRGB(t.R * 255, t.G * 255, t.B * 255))
 end)
