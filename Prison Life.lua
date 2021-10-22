@@ -229,6 +229,15 @@ local settingstab = win:Tab("Ui Settings")
 
 hometab:Button("Copy Discord", function()
         setclipboard("https://discord.gg/SFnBS6ag43")
+        
+                        local NewSound = Instance.new("Sound")
+        NewSound.Parent = game.Players.LocalPlayer.Character
+        NewSound.SoundId = "rbxassetid://7147454322"
+        NewSound.Volume = 0.1
+
+        NewSound:Play()
+        NewSound.Ended:Wait()
+        NewSound:Destroy()
 end)
 
 hometab:Label("Exploit: ".. exploit)
@@ -238,6 +247,15 @@ hometab:Label("Thx For using Moon Hub")
 --Combat
 guntab:Button("Give all Gun", function()
    pcall(function()
+                   local NewSound = Instance.new("Sound")
+        NewSound.Parent = game.Players.LocalPlayer.Character
+        NewSound.SoundId = "rbxassetid://7147454322"
+        NewSound.Volume = 0.1
+
+        NewSound:Play()
+        NewSound.Ended:Wait()
+        NewSound:Destroy()
+        
 if checkgamepass(game.Players.LocalPlayer.UserId,96651) then
 
 		local Weapon = {"M4A1"}
@@ -271,6 +289,15 @@ end)
    end)    
 guntab:Button("Give all knife", function()
    pcall(function()
+                   local NewSound = Instance.new("Sound")
+        NewSound.Parent = game.Players.LocalPlayer.Character
+        NewSound.SoundId = "rbxassetid://7147454322"
+        NewSound.Volume = 0.1
+
+        NewSound:Play()
+        NewSound.Ended:Wait()
+        NewSound:Destroy()
+        
             local weapons = {"Crude Knife", "Sharpened stick", "Extendo mirror"}
 	for i, v in pairs(game.ReplicatedStorage.Tools:GetChildren()) do
 	    for j, k in pairs(weapons) do
@@ -284,6 +311,15 @@ end)
    
    Aimbotab:Button("Silent Aim", function()
       pcall(function()
+                      local NewSound = Instance.new("Sound")
+        NewSound.Parent = game.Players.LocalPlayer.Character
+        NewSound.SoundId = "rbxassetid://7147454322"
+        NewSound.Volume = 0.1
+
+        NewSound:Play()
+        NewSound.Ended:Wait()
+        NewSound:Destroy()
+        
 function ClosestChar()
 		local Max, Close = math.huge
 		for I,V in pairs(GetPlayers(Players)) do
@@ -324,45 +360,115 @@ end)
 
 Aimbotab:Toggle("AimBot",false, function(value)
    pcall(function()
+                   local NewSound = Instance.new("Sound")
+        NewSound.Parent = game.Players.LocalPlayer.Character
+        NewSound.SoundId = "rbxassetid://7147454322"
+        NewSound.Volume = 0.1
+
+        NewSound:Play()
+        NewSound.Ended:Wait()
+        NewSound:Destroy()
+        
 aimbotsettings.enabled = value
    end)  
 end)
 
 Aimbotab:Toggle("Wall Check",false, function(value)
    pcall(function()
+                local NewSound = Instance.new("Sound")
+        NewSound.Parent = game.Players.LocalPlayer.Character
+        NewSound.SoundId = "rbxassetid://7147454322"
+        NewSound.Volume = 0.1
+
+        NewSound:Play()
+        NewSound.Ended:Wait()
+        NewSound:Destroy()
     aimbotsettings.wallcheck = value
    end)  
 end)
   
   Aimbotab:Toggle("Free For All",false, function(value)
    pcall(function()
+                   local NewSound = Instance.new("Sound")
+        NewSound.Parent = game.Players.LocalPlayer.Character
+        NewSound.SoundId = "rbxassetid://7147454322"
+        NewSound.Volume = 0.1
+
+        NewSound:Play()
+        NewSound.Ended:Wait()
+        NewSound:Destroy()
+        
 aimbotsettings.freeforall = value
    end)  
 end)
 --ESP
 ESPtab:Toggle("ESP",false, function(value)
    pcall(function()
+                   local NewSound = Instance.new("Sound")
+        NewSound.Parent = game.Players.LocalPlayer.Character
+        NewSound.SoundId = "rbxassetid://7147454322"
+        NewSound.Volume = 0.1
+
+        NewSound:Play()
+        NewSound.Ended:Wait()
+        NewSound:Destroy()
+        
 ESPEnabled = value
    end)  
 end)
 
 ESPtab:Toggle("Tracers",false, function(value)
    pcall(function()
+                   local NewSound = Instance.new("Sound")
+        NewSound.Parent = game.Players.LocalPlayer.Character
+        NewSound.SoundId = "rbxassetid://7147454322"
+        NewSound.Volume = 0.1
+
+        NewSound:Play()
+        NewSound.Ended:Wait()
+        NewSound:Destroy()
+        
 TracersEnabled = value
    end)  
 end)
 
 ESPtab:Toggle("Distance Display",false, function(value)
    pcall(function()
+                   local NewSound = Instance.new("Sound")
+        NewSound.Parent = game.Players.LocalPlayer.Character
+        NewSound.SoundId = "rbxassetid://7147454322"
+        NewSound.Volume = 0.1
+
+        NewSound:Play()
+        NewSound.Ended:Wait()
+        NewSound:Destroy()
+        
 DistanceEnabled = value
    end)  
 end)
 --Teams
 teamstab:Button("Prisoner", function()
+                local NewSound = Instance.new("Sound")
+        NewSound.Parent = game.Players.LocalPlayer.Character
+        NewSound.SoundId = "rbxassetid://7147454322"
+        NewSound.Volume = 0.1
+
+        NewSound:Play()
+        NewSound.Ended:Wait()
+        NewSound:Destroy()
     workspace.Remote.TeamEvent:FireServer("Bright orange") 
 end)
 
 teamstab:Button("Criminal", function()
+                local NewSound = Instance.new("Sound")
+        NewSound.Parent = game.Players.LocalPlayer.Character
+        NewSound.SoundId = "rbxassetid://7147454322"
+        NewSound.Volume = 0.1
+
+        NewSound:Play()
+        NewSound.Ended:Wait()
+        NewSound:Destroy()
+        
     local LP = game.Players.LocalPlayer
     local RE = LP.Character.HumanoidRootPart.Position
     LP.Character.HumanoidRootPart.CFrame = CFrame.new(-919.958, 95.327, 2138.189)
@@ -371,10 +477,28 @@ teamstab:Button("Criminal", function()
 end)
 
 teamstab:Button("Police", function()
+                local NewSound = Instance.new("Sound")
+        NewSound.Parent = game.Players.LocalPlayer.Character
+        NewSound.SoundId = "rbxassetid://7147454322"
+        NewSound.Volume = 0.1
+
+        NewSound:Play()
+        NewSound.Ended:Wait()
+        NewSound:Destroy()
+        
     workspace.Remote.TeamEvent:FireServer("Bright blue")
 end)
 
 teamstab:Button("Neatral", function()
+                local NewSound = Instance.new("Sound")
+        NewSound.Parent = game.Players.LocalPlayer.Character
+        NewSound.SoundId = "rbxassetid://7147454322"
+        NewSound.Volume = 0.1
+
+        NewSound:Play()
+        NewSound.Ended:Wait()
+        NewSound:Destroy()
+        
     workspace.Remote.TeamEvent:FireServer("Medium stone grey") 
 end)
 
@@ -382,6 +506,15 @@ end)
 
 teleporttab:Textbox("Teleport to player",true, function(arg)
    pcall(function()
+                   local NewSound = Instance.new("Sound")
+        NewSound.Parent = game.Players.LocalPlayer.Character
+        NewSound.SoundId = "rbxassetid://7147454322"
+        NewSound.Volume = 0.1
+
+        NewSound:Play()
+        NewSound.Ended:Wait()
+        NewSound:Destroy()
+        
        local plr = Players.LocalPlayer.Character.HumanoidRootPart
        local target = Players[arg].Character.HumanoidRootPart
        plr.CFrame = target.CFrame
@@ -389,45 +522,118 @@ end)
    end)
    
    teleporttab:Button("Gaurd Room", function()
+                   local NewSound = Instance.new("Sound")
+        NewSound.Parent = game.Players.LocalPlayer.Character
+        NewSound.SoundId = "rbxassetid://7147454322"
+        NewSound.Volume = 0.1
+
+        NewSound:Play()
+        NewSound.Ended:Wait()
+        NewSound:Destroy()
+        
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(798.664368, 99.9900055, 2264.11157)
 end)
 
 teleporttab:Button("Yard", function()
+                local NewSound = Instance.new("Sound")
+        NewSound.Parent = game.Players.LocalPlayer.Character
+        NewSound.SoundId = "rbxassetid://7147454322"
+        NewSound.Volume = 0.1
+
+        NewSound:Play()
+        NewSound.Ended:Wait()
+        NewSound:Destroy()
+        
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(767.570129, 97.9999466, 2461.25659)
 end)
 
 teleporttab:Button("Kitchen", function()
+                local NewSound = Instance.new("Sound")
+        NewSound.Parent = game.Players.LocalPlayer.Character
+        NewSound.SoundId = "rbxassetid://7147454322"
+        NewSound.Volume = 0.1
+
+        NewSound:Play()
+        NewSound.Ended:Wait()
+        NewSound:Destroy()
+        
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(941.972778, 99.9899597, 2222.83716)
 end)
 
 teleporttab:Button("Police Garager", function()
+                local NewSound = Instance.new("Sound")
+        NewSound.Parent = game.Players.LocalPlayer.Character
+        NewSound.SoundId = "rbxassetid://7147454322"
+        NewSound.Volume = 0.1
+
+        NewSound:Play()
+        NewSound.Ended:Wait()
+        NewSound:Destroy()
+        
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(614.918396, 98.2000275, 2512.02368)
 end)
 
 teleporttab:Button("Main Tower", function()
+                local NewSound = Instance.new("Sound")
+        NewSound.Parent = game.Players.LocalPlayer.Character
+        NewSound.SoundId = "rbxassetid://7147454322"
+        NewSound.Volume = 0.1
+
+        NewSound:Play()
+        NewSound.Ended:Wait()
+        NewSound:Destroy()
+        
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(823.287292, 130.039948, 2587.73975)
 end)
 
 teleporttab:Button("Prison Entrance", "Teleport to Prison Entrance", function()
+                local NewSound = Instance.new("Sound")
+        NewSound.Parent = game.Players.LocalPlayer.Character
+        NewSound.SoundId = "rbxassetid://7147454322"
+        NewSound.Volume = 0.1
+
+        NewSound:Play()
+        NewSound.Ended:Wait()
+        NewSound:Destroy()
+        
 	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(474.655701, 98.1900101, 2250.36841)
 end)
 
 teleporttab:Button("Criminal WareHouse", function()
+                local NewSound = Instance.new("Sound")
+        NewSound.Parent = game.Players.LocalPlayer.Character
+        NewSound.SoundId = "rbxassetid://7147454322"
+        NewSound.Volume = 0.1
+
+        NewSound:Play()
+        NewSound.Ended:Wait()
+        NewSound:Destroy()
+        
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-919.958, 95.327, 2128.1180)
 end)
 
 teleporttab:Button("Cafe", function()
+                local NewSound = Instance.new("Sound")
+        NewSound.Parent = game.Players.LocalPlayer.Character
+        NewSound.SoundId = "rbxassetid://7147454322"
+        NewSound.Volume = 0.1
+
+        NewSound:Play()
+        NewSound.Ended:Wait()
+        NewSound:Destroy()
+        
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-919.958, 95.327, 2128.1180)
 end)
 
 --gamingtb
 playertab:Slider("Walk Speed",16,100,16, function(cc)
+
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = cc
 end)
 
 --gamingtb
 playertab:Slider("JumpPower",50,250,50, function(t)
-    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = t
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = t
 end)
 
   
